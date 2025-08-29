@@ -1,18 +1,14 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-import {
-  useFonts,
-  Inter_400Regular,
-  Inter_700Bold,
-} from "@expo-google-fonts/inter";
-import { Bungee_400Regular } from "@expo-google-fonts/bungee";
+import {useFonts, Bungee_400Regular } from "@expo-google-fonts/bungee";
+import {Lobster_400Regular} from "@expo-google-fonts/lobster"
 import SecondScreen from "./SecondScreen";
 
 const HomeScreen = ({ navigation }) => {
   const [fontsLoaded] = useFonts({
-    Inter_400Regular,
-    Inter_700Bold,
+
     Bungee_400Regular,
+    Lobster_400Regular
   });
 
   if (!fontsLoaded) {
@@ -56,9 +52,9 @@ const styles = StyleSheet.create({
     top: 10,
   },
   screenText: {
-    fontSize: 20,
-    color: "white",
-    fontFamily: "Inter_700Bold",
+    fontSize: 30,
+    color: "cyan",
+    fontFamily: "Lobster_400Regular",
   },
   buttonText: {
     color: "white",
